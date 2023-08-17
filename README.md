@@ -1,10 +1,20 @@
-# stable-diffusion-webui-docker
+# Stable Diffusion WebUI Docker
 
-Dockerized stable diffusion webui, with mountable models and outputs
+Dockerized runner for the [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
-## Configuration
+## Using
 
-Edit the [webui-user.sh](./webui-user.sh) file to change configuration options. The file is originally from [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/master/webui-user.sh).
+1. Clone the [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) repository
+
+```sh
+git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+```
+
+2. Run the container with the directory mounted into it
+
+```sh
+docker run --name sd-ui -v ./stable-diffusion-webui:/stable-diffusion-webui ghcr.io/tlaanemaa/stable-diffusion-webui-docker:latest
+```
 
 ## Building
 
