@@ -11,7 +11,7 @@ RUN apt-get update && \
 VOLUME /stable-diffusion-webui
 WORKDIR /stable-diffusion-webui
 
-VOLUME /venv
+#VOLUME /venv
 ENV venv_dir=/venv
 
 CMD ["./webui.sh", "-f"]
