@@ -6,6 +6,9 @@ RUN apt-get update && \
     git \
     python3.10 \
     python3.10-venv \
+    ffmpeg \
+    libsm6  \
+    libxext6 \
     libtcmalloc-minimal4
 
 VOLUME /stable-diffusion-webui
