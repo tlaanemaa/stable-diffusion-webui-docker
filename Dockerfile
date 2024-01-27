@@ -14,7 +14,7 @@ RUN apt-get update && \
 VOLUME /stable-diffusion-webui
 WORKDIR /stable-diffusion-webui
 
-VOLUME /venv
+# VOLUME /venv  # For some reason this causes the container to fail to start
 ENV venv_dir=/venv
 
 CMD ["./webui.sh", "-f"]
