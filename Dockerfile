@@ -16,5 +16,6 @@ WORKDIR /stable-diffusion-webui
 
 # VOLUME /venv  # For some reason this causes the container to fail to start
 ENV venv_dir=/venv
+ENV SD_WEBUI_CACHE_DIR=/sd_webui_cache
 
 CMD ["./webui.sh", "-f"]
